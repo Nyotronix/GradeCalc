@@ -50,6 +50,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             guest.schoolName = tableData[indexPath.row].firstRowLabel
         }
     }
-
+    
+    //MARK: Actions
+    @IBAction func PlusButton(_ sender: UIButton) {
+    }
+    
 }
 
