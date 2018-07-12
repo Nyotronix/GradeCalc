@@ -1,5 +1,5 @@
 //
-//  SchoolGradeTableViewCell.swift
+//  SchoolTableViewCell.swift
 //  GradeCalc
 //
 //  Created by Gus Petito on 7/11/18.
@@ -8,10 +8,12 @@
 
 import UIKit
 
-class SchoolGradeTableViewCell: UITableViewCell {
+class SchoolTableViewCell: UITableViewCell {
     
-    //MARK: Properties
-
+    //MARK: Outlets
+    @IBOutlet weak var ClassName: UILabel!
+    @IBOutlet weak var Grade: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

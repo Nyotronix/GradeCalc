@@ -8,18 +8,36 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    struct MyData{
+        var firstRowLabel: String
+        var secondRowLabel: String
+    }
+    
+    var tableData: [MyData] = []
+    
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
+        //The amount of rows we want in our table
+        return(tableData.count)
+    }
+
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
+        let cell = tableView.dequeueReusableCell(withIdentifier: "SchoolCell") as! SchoolTableViewCell
+        cell.ClassName.text = tableData[indexPath.row].firstRowLabel
+        cell.Grade.text = tableData[indexPath.row].secondRowLabel
+        return(cell)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        tableData = [
+            MyData(firstRowLabel: "The first row", secondRowLabel: "Hello"),
+            MyData(firstRowLabel: "The second row", secondRowLabel: "There"),
+            MyData(firstRowLabel: "The third and final row", secondRowLabel: "Gus Petito")
+        ]
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 
 }
 

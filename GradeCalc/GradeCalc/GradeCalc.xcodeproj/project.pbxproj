@@ -12,7 +12,7 @@
 		A66DD32B20F5A0320085FC4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A66DD32920F5A0320085FC4F /* Main.storyboard */; };
 		A66DD32D20F5A05E0085FC4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A66DD32C20F5A05E0085FC4F /* Assets.xcassets */; };
 		A66DD33020F5A05E0085FC4F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A66DD32E20F5A05E0085FC4F /* LaunchScreen.storyboard */; };
-		B94EF14C20F69F8F009B2639 /* SchoolGradeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94EF14B20F69F8F009B2639 /* SchoolGradeTableViewCell.swift */; };
+		B924BD6220F6DD0B00BC3F9D /* SchoolTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B924BD6120F6DD0B00BC3F9D /* SchoolTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +23,7 @@
 		A66DD32C20F5A05E0085FC4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A66DD32F20F5A05E0085FC4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A66DD33120F5A05E0085FC4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B94EF14B20F69F8F009B2639 /* SchoolGradeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolGradeTableViewCell.swift; sourceTree = "<group>"; };
+		B924BD6120F6DD0B00BC3F9D /* SchoolTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +58,8 @@
 			children = (
 				A66DD32520F5A0320085FC4F /* AppDelegate.swift */,
 				A66DD32720F5A0320085FC4F /* ViewController.swift */,
+				B924BD6120F6DD0B00BC3F9D /* SchoolTableViewCell.swift */,
 				A66DD32920F5A0320085FC4F /* Main.storyboard */,
-				B94EF14B20F69F8F009B2639 /* SchoolGradeTableViewCell.swift */,
 				A66DD32C20F5A05E0085FC4F /* Assets.xcassets */,
 				A66DD32E20F5A05E0085FC4F /* LaunchScreen.storyboard */,
 				A66DD33120F5A05E0085FC4F /* Info.plist */,
@@ -140,7 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A66DD32820F5A0320085FC4F /* ViewController.swift in Sources */,
-				B94EF14C20F69F8F009B2639 /* SchoolGradeTableViewCell.swift in Sources */,
+				B924BD6220F6DD0B00BC3F9D /* SchoolTableViewCell.swift in Sources */,
 				A66DD32620F5A0320085FC4F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
