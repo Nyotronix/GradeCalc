@@ -33,9 +33,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.viewDidLoad()
         
         tableData = [
-            MyData(firstRowLabel: "The first row", secondRowLabel: "Hello"),
-            MyData(firstRowLabel: "The second row", secondRowLabel: "There"),
-            MyData(firstRowLabel: "The third and final row", secondRowLabel: "Gus Petito")
+            MyData(firstRowLabel: "Discrete Math", secondRowLabel: "56%"),
+            MyData(firstRowLabel: "US History", secondRowLabel: "33%"),
+            MyData(firstRowLabel: "Sculpting", secondRowLabel: "12%")
         ]
     }
 
