@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     //MARK: IBOutlets
-    @IBOutlet var tableView: UITableView!
+    @IBOutlet weak var SchoolTableView: UITableView!
     
     struct MyData{
         var firstRowLabel: String
@@ -23,9 +23,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView.delegate = self
-        tableView.dataSource = self
-        
         tableData = [
             MyData(firstRowLabel: "Discrete Math", secondRowLabel: "56%"),
             MyData(firstRowLabel: "US History", secondRowLabel: "33%"),
@@ -33,15 +30,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         ]
     }
     
-    //MARK: Navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let guest = segue.destination as! SchoolViewController
-        guest.schoolName = tableData[tableView.indexPathForSelectedRow?.row as! Int].firstRowLabel
-    }
-    
     //MARK: UITableViewDelegate Methods
-    
-    
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
         //The amount of rows we want in our table
         return(tableData.count)
@@ -52,6 +41,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         cell.ClassName.text = tableData[indexPath.row].firstRowLabel
         cell.Grade.text = tableData[indexPath.row].secondRowLabel
         return(cell)
+    }
+    
+    //MARK: Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let indexPath = SchoolTableView.indexPathForSelectedRow{
+            let guest = segue.destination as! SchoolViewController
+            guest.schoolName = tableData[indexPath.row].firstRowLabel
+        }
     }
 
 }
