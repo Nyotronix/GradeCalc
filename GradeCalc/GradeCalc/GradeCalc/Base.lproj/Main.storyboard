@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lj6-MY-vjk">
-                                <rect key="frame" x="0.0" y="84" width="375" height="583"/>
+                                <rect key="frame" x="0.0" y="74" width="375" height="593"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SchoolCell" id="jS7-UR-srm" customClass="SchoolTableViewCell" customModule="GradeCalc" customModuleProvider="target">
@@ -72,7 +72,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="lj6-MY-vjk" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="485-oD-5P7"/>
-                            <constraint firstItem="lj6-MY-vjk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="OIR-4z-oTS"/>
+                            <constraint firstItem="lj6-MY-vjk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="OIR-4z-oTS"/>
                             <constraint firstItem="lj6-MY-vjk" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="X6N-h2-wDk"/>
                             <constraint firstItem="lj6-MY-vjk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="uVV-QH-PHN"/>
                         </constraints>

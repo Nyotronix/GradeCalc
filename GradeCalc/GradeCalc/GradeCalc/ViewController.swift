@@ -53,6 +53,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     //MARK: Actions
     @IBAction func PlusButton(_ sender: UIButton) {
+        let alert = UIAlertController(title: "Class", message: "Please enter a class name", preferredStyle: .alert)
+        alert.addTextField{ (textField : UITextField!) -> Void in
+        }
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { [weak alert] (_) in
+            let textField = alert?.textFields![0]
+        }))
+        self.present(alert, animated: true, completion: nil)
     }
     
 }
