@@ -89,6 +89,9 @@
                                     <action selector="PlusButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H3u-qy-tXh"/>
                                 </connections>
                             </button>
+                            <connections>
+                                <action selector="PlusButton:" destination="BYZ-38-t0r" id="bqm-PV-U5i"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
